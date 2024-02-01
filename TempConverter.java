@@ -18,7 +18,7 @@ public class TempConverter {
         double fahrenheit = in.nextDouble();
 
         // Converting Fahrenheit to Celsius
-        double celsius = ((fahrenheit * 5) / 9) + FREEZING_POINT_WATER_IN_F;
+        double celsius = ((fahrenheit - FREEZING_POINT_WATER_IN_F) * 5) / 9;
 
         // Converting Celsius to Kelvin
         double kelvin = celsius + MELTING_POINT_ICE_IN_K;
