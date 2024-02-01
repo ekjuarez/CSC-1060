@@ -11,15 +11,20 @@ public class TempConverter {
 
         Scanner in = new Scanner(System.in);
 
+        // Intro request for Fahrenheit
         System.out.println("Please enter temperature in Fahrenheit: ");
+
+        // Taking in Fahrenheit from input
         double fahrenheit = in.nextDouble();
 
+        // Converting Fahrenheit to Celsius
         double celsius = ((fahrenheit * 5) / 9) + FREEZING_POINT_WATER_IN_F;
 
+        // Converting Celsius to Kelvin
         double kelvin = celsius + MELTING_POINT_ICE_IN_K;
 
+        // Sexy output statements using concatenation
         System.out.println(fahrenheit + " degrees Fahrenheit is equal to " + celsius + " degrees Celsius.");
-
         System.out.println(celsius + " degrees celsius is equal to " + kelvin + " degrees Kelvin");
     }
 }
