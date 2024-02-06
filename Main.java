@@ -2,17 +2,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // CONSTANTS
-        final double CM_PER_INCH = 2.54;
-
-
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Please enter number of inches: ");
-        double inches = in.nextDouble();
+        System.out.println("Please enter the radius of the cylinder: ");
+        double radius = in.nextDouble();
 
-        double centimeters = inches * CM_PER_INCH;
+        System.out.println("Please enter the length of the cylinder: ");
+        double length = in.nextDouble();
 
-        System.out.println(inches + " inches is equal to " + centimeters + " centimeters");
+        double area = computeArea(radius);
+        double volume = computeVolume(radius, length);
+
+
+    }
+
+    public static double computeArea(double radius) {
+        return radius * radius * Math.PI;
+    }
+
+    public static double computeVolume(double area, double length) {
+        return area * length;
     }
 }
+
