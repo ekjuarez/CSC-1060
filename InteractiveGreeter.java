@@ -36,7 +36,7 @@ public class InteractiveGreeter {
         String user_interest = in.nextLine();
 
         // Warm response to interest
-        System.out.println(user_interest + " sounds awesome!");
+        System.out.println("That sounds awesome!");
         System.out.println("Have fun next time you " + user_interest + "!");
 
         // Asks user for donation amount
@@ -46,6 +46,6 @@ public class InteractiveGreeter {
         double donation_amount = in.nextDouble();
 
         // Last statement with donation amount
-        System.out.println("Awesome! You will donate $" + donation_amount + "today! Rockin!");
+        System.out.println("Awesome! You will donate $" + donation_amount + " today! Rockin!");
     }
 }
