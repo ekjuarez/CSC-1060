@@ -4,24 +4,35 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Please enter the radius of the cylinder: ");
-        double radius = in.nextDouble();
+        System.out.println("Hello! Please enter 3 integers below!");
 
-        System.out.println("Please enter the length of the cylinder: ");
-        double length = in.nextDouble();
+        System.out.println("First integer: ");
+        int firstNumber = in.nextInt();
 
-        double area = computeArea(radius);
-        double volume = computeVolume(radius, length);
+        System.out.println("Second integer:");
+        int secondNumber = in.nextInt();
+
+        System.out.println("Third integer: ");
+        int thirdNumber = in.nextInt();
+
+        int greatestNum = greatestNumber(firstNumber, secondNumber, thirdNumber);
+
+        System.out.println("The greatest number of the three is: " + greatestNum);
+        System.out.println("Goodbye!");
 
 
     }
-
-    public static double computeArea(double radius) {
-        return radius * radius * Math.PI;
-    }
-
-    public static double computeVolume(double area, double length) {
-        return area * length;
+    public static int greatestNumber(int first, int second, int third) {
+        int greatestNum = 0;
+        if (first > second) {
+            greatestNum = first;
+        } else {
+            greatestNum = second;
+        }
+        if (third > greatestNum) {
+            greatestNum = third;
+        }
+        return greatestNum;
     }
 }
 
