@@ -26,7 +26,7 @@ public class BottlesOfBeer {
                 // Else if to handle when there is only 1 bottle in order to have correct word usage
             } else if (currentBottle == 1) {
                 System.out.println(currentBottle + " bottle of beer on the wall, " + currentBottle + " bottle of beer.\n" +
-                        "Take one down and pass it around, " + nextBottle + " bottles of beer on the wall.");
+                        "Take one down and pass it around, " + nextBottle + " bottle of beer on the wall.");
                 System.out.println();
 
                 // Different jingle for when there are no more bottles left
