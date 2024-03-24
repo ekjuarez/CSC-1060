@@ -2,37 +2,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Time t1 = new Time();
+        Time t2 = new Time(17, 30, 0);
+        Time t3 = Time.fromString("14:15:56");
 
-        System.out.println("Hello! Please enter 3 integers below!");
+        t1.increment(3600);
+        t1.print(true);
+        t1.print(false);
 
-        System.out.println("First integer: ");
-        int firstNumber = in.nextInt();
+        t2.increment(5430);
 
-        System.out.println("Second integer:");
-        int secondNumber = in.nextInt();
+        t2.print(true);
+        t2.print(false);
 
-        System.out.println("Third integer: ");
-        int thirdNumber = in.nextInt();
-
-        int greatestNum = greatestNumber(firstNumber, secondNumber, thirdNumber);
-
-        System.out.println("The greatest number of the three is: " + greatestNum);
-        System.out.println("Goodbye!");
-
-
-    }
-    public static int greatestNumber(int first, int second, int third) {
-        int greatestNum = 0;
-        if (first > second) {
-            greatestNum = first;
-        } else {
-            greatestNum = second;
-        }
-        if (third > greatestNum) {
-            greatestNum = third;
-        }
-        return greatestNum;
+        t3.increment(5);
+        t3.print(true);
+        t3.print(false);
     }
 }
-
