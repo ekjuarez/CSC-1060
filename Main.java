@@ -1,22 +1,26 @@
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+import Kitchen.CookingAppliance;
+import Kitchen.Microwave;
+import Kitchen.Fridge;
+import Kitchen.Kitchen;
+
+
 
 public class Main {
     public static void main(String[] args) {
-        Time t1 = new Time();
-        Time t2 = new Time(17, 30, 0);
-        Time t3 = Time.fromString("14:15:56");
+        Fridge fridge = new Fridge();
+        fridge.storeFood("orange");
+        fridge.storeFood("milk");
 
-        t1.increment(3600);
-        t1.print(true);
-        t1.print(false);
+        fridge.viewFridge();
 
-        t2.increment(5430);
+        Microwave microwave = new Microwave();
+        microwave.cookThing();
 
-        t2.print(true);
-        t2.print(false);
+        List<CookingAppliance> appliances = new ArrayList<>();
+        Kitchen kitchen = new Kitchen(appliances);
 
-        t3.increment(5);
-        t3.print(true);
-        t3.print(false);
+        kitchen.cookEverything();
     }
 }
