@@ -1,11 +1,18 @@
 package Shapes;
 
 public class Circle extends Shapes {
-    public double calculateArea(double radius) {
+
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+    @Override
+    public double calculateArea() {
         return (Math.PI) * (radius * radius);
     }
-
-    public double calculatePerimeter(double radius) {
+    @Override
+    public double calculatePerimeter() {
         return (Math.PI) * (radius * 2);
     }
 }    
