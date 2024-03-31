@@ -2,7 +2,7 @@ package AnimalShelter;
 
 public class Main {
     public static void main(String[] args) {
-        AdoptableAnimal[] animals = new AdoptableAnimal[] {
+        AdoptableAnimal[] animals = new AdoptableAnimal[]{
                 new Cat("Billy", "He sucks", 200000),
                 new Cat("Not Billy", "Way better than billy", 2),
                 new Aussie("Jimbo", "Wow!", 200),

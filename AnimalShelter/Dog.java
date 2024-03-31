@@ -11,17 +11,21 @@ public abstract class Dog implements AdoptableAnimal {
         this.description = description;
         this.price = price;
     }
+
     @Override
     public String getName() {
         return this.name;
     }
+
     @Override
     public String getDescription() {
         return this.description;
     }
+
     @Override
     public int getPrice() {
         return this.price;
     }
+
     public abstract String getBreed();
 }

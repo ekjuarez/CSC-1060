@@ -1,6 +1,6 @@
 package AnimalShelter;
 
-public class Cat implements AdoptableAnimal{
+public class Cat implements AdoptableAnimal {
 
     private final String name;
     private final String description;
@@ -11,14 +11,17 @@ public class Cat implements AdoptableAnimal{
         this.description = description;
         this.price = price;
     }
+
     @Override
     public String getName() {
         return this.name;
     }
+
     @Override
     public String getDescription() {
         return this.description;
     }
+
     @Override
     public int getPrice() {
         return this.price;
