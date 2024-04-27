@@ -1,0 +1,3 @@
+Sub-total before tax: $414.24
+Total tax amount: $21.95
+Total amount: $436.19
